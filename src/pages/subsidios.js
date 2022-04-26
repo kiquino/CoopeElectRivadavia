@@ -1,11 +1,14 @@
 import React from "react";
-import Footer from "../componets/Footer";
-import Navbar from "../componets/Navbar";
+import BloqueTexto from "../componets/textBlock";
+
+import TitleGeneric from "../componets/titulogen";
+
 const Subsidios =()=>{
     return(
         <div>
-            <Navbar />
-            <Footer />
+           
+           <TitleGeneric text="subsidios" />
+            <BloqueTexto alineacion="left" titulo="Subsidios por fallecimiento" texto="" />
         </div>
     )
 }

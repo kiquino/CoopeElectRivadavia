@@ -15,12 +15,18 @@ import Internet from "./pages/internet";
 
 
 import "./App.css";
+import Navbar from "./componets/Navbar";
+import Footer from "./componets/Footer";
+import Nosotros from "./pages/nosotros";
+import Concesion from "./pages/concesion";
+import Novedades from "./pages/novedades";
+import ResponsabilidadSocial from "./pages/responsabilidadSocial";
 
 function App() {
   return (
     <div className="App">
       <Router>
-       
+       <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/lacooperativa" element={<LaCooperativa />} />
@@ -32,9 +38,17 @@ function App() {
           <Route path="/subsidios" element={<Subsidios />} />
           <Route path="/venta-de-materiales" element={<Venta />} />
           <Route path="/one-internet" element={<Internet />} />
+          <Route path="/Nosotros" element={<Nosotros />} />
+          <Route path="/Concesion" element={<Concesion />} />
+          <Route path="/novedades" element={<Novedades />} />
+          <Route path="/ResponsabilidadSocial" element={<ResponsabilidadSocial />} />
+         
+
+         
+         
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
-   
+   <Footer />
       </Router>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from "react";
-import Footer from "../componets/Footer";
-import Navbar from "../componets/Navbar";
+import TitleGeneric from "../componets/titulogen";
+
+
 const Venta =()=>{
     return(
         <div>
-            <Navbar />
-            <Footer />
+        <TitleGeneric text="venta" />
         </div>
     )
 }

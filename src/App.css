@@ -21,6 +21,42 @@ p {
   font-family: calibri;
 }
 
+.text-block {
+  width: 70%;
+  margin: 3rem auto;
+}
+
+.text-block h1 {
+  color: #00c853;
+  font-size: 2.5rem;
+  margin: 1.2rem 0;
+}
+
+.lambada {
+  width: 100%;
+  min-height: 30%;
+  background-color: #06a548;
+  color: white;
+  font-size: 10rem;
+  font-weight: 300;
+  padding: 3rem;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lambada h1 {
+  border-top: 2px solid white;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 6rem;
+  border-bottom: 2px solid white;
+}
+
 .nav-bg {
   background-color: #5ee295;
   display: -webkit-box;
@@ -300,6 +336,13 @@ p {
 
 #card-novedades {
   margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #card-novedades .card {
@@ -385,11 +428,17 @@ p {
 }
 
 #card-novedades .card .card-body .card-text {
+  display: -webkit-box;
   font-size: 1.5rem;
   font-weight: 400;
   color: black;
   text-align: start;
   margin-bottom: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 6;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
 }
 
 #card-novedades .card .card-body .nav-item {
@@ -454,6 +503,13 @@ p {
           flex-direction: column;
   color: #00c853;
   z-index: 1;
+}
+
+#eficiencia-energetica .lampTitle img {
+  width: 40%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #eficiencia-energetica .lampTitle .esquina-img-lamp {
@@ -1047,5 +1103,318 @@ footer .link-list-footer li ul li::before {
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.maincontent-home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bg .nav .redes-sociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    top: -25%;
+    right: 10%;
+  }
+  .nav-bg .nav .nav-links .nav-item a {
+    font-size: 1.1rem;
+  }
+  .nav-bg .nav .nav-links .nav-item button {
+    font-size: 1.1rem;
+  }
+  .nav-bg .nav .Logo-link {
+    width: 110px;
+    height: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-bg .nav .Logo-link .logo-coope-home {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #card-novedades .card:nth-child(even) img {
+    border-left: 2.5rem solid #00c853;
+  }
+  #card-novedades .card img {
+    border-right: 2.5rem solid #00c853;
+  }
+  #card-novedades .card .card-body {
+    position: relative;
+  }
+  #card-novedades .card .card-body .card-text {
+    font-size: 1.2rem;
+  }
+  #card-novedades .card .card-body .nav-item img {
+    border-right: none;
+  }
+  .contenedor-contacto .contenedor-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedor-contacto .contenedor-info h1 {
+    color: #00c853;
+    font-weight: bold;
+  }
+  .contenedor-contacto .contenedor-info ul li img {
+    width: 80px;
+    height: 80px;
+  }
+  .contenedor-contacto .contenedor-info ul li .contacto-info-item h3 {
+    font-weight: bold;
+  }
+  .contenedor-contacto .contenedor-img-chat img {
+    width: 150px;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .contenedor-contacto .contenedor-img-chat img:nth-child(2) {
+    position: absolute;
+    top: 25%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav-bg .nav {
+    padding: 0.5rem 0.5rem;
+  }
+  .nav-bg .nav .redes-sociales {
+    top: -25%;
+    right: 10%;
+  }
+  .nav-bg .nav .nav-links .nav-item a {
+    font-size: 0.9rem;
+  }
+  .nav-bg .nav .nav-links .nav-item button {
+    font-size: 0.9rem;
+  }
+  .nav-bg .nav .Logo-link {
+    width: 110px;
+    height: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-bg .nav .Logo-link .logo-coope-home {
+    width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .payment-method-container .payment-method-content {
+    width: 70%;
+    text-align: center;
+  }
+  .payment-method-container .payment-method-list {
+    width: 80%;
+  }
+  .payment-method-container .payment-method-list ul li img {
+    width: 80px;
+    height: auto;
+  }
+  .contact-form {
+    width: 80%;
+  }
+  .contact-form .optional-text {
+    width: 50%;
+  }
+  .contact-form .background-form {
+    width: 90%;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .contact-form .background-form form {
+    padding: 1.5rem 0;
+    width: 80%;
+  }
+  .contact-form .background-form form .input-item img {
+    width: 30px;
+    height: 30px;
+  }
+  .contact-form .background-form form .input-item label {
+    height: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    min-width: 20rem;
+  }
+  .contact-form .background-form form .input-item label input {
+    border: none;
+  }
+  .contact-form .background-form form .input-item .label-ta {
+    height: auto;
+  }
+  .contact-form .background-form form .input-item .label-ta textarea {
+    border: none;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem;
+  }
+  .Follow-Us-container .title-group h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+  }
+  .Follow-Us-container .title-group p {
+    text-transform: uppercase;
+  }
+  .Follow-Us-container .social-media-container ul li a {
+    width: 75px;
+    height: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 0.5rem;
+  }
+  #spinner .nav-item .nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90px;
+    height: auto;
+    padding: 0.9rem;
+    position: relative;
+  }
+  #spinner .nav-item h2 {
+    font-size: 1.1rem;
+  }
+  #novedades-title {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    margin-top: 4rem;
+  }
+  #novedades-title .novedades-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  #novedades-title .novedades-title a {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 400px;
+  }
+  #novedades-title .novedades-title a img {
+    z-index: 1;
+    width: 30%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #novedades-title .novedades-title a h1 {
+    color: white;
+    background-color: #00c853;
+    padding: 0.8rem;
+    position: absolute;
+    right: -50px;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 3rem;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  #card-novedades .card {
+    width: 80%;
+    height: 400px;
+  }
+  #card-novedades .card:nth-child(even) img {
+    border-left: 2rem solid #00c853;
+  }
+  #card-novedades .card img {
+    border-right: 2rem solid #00c853;
+  }
+  #card-novedades .card .card-body {
+    position: relative;
+  }
+  #card-novedades .card .card-body .card-title {
+    font-size: 1.8rem;
+  }
+  #card-novedades .card .card-body .card-text {
+    font-size: 0.9rem;
+  }
+  #card-novedades .card .card-body .nav-item img {
+    border-right: none;
+  }
+  #eficiencia-energetica .lampTitle h1 {
+    font-size: 3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #00c853;
+    z-index: 1;
+  }
+  #eficiencia-energetica .lampTitle .esquina-img-lamp {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    width: 70%;
+  }
 }
 /*# sourceMappingURL=App.css.map */

@@ -1,15 +1,17 @@
 import React from "react";
-import BodyHP from "../componets/Bodyhp";
-import Navbar from "../componets/Navbar";
-import Footer from "../componets/Footer";
+import Banner from "../componets/banner";
+
+import TitleGeneric from "../componets/titulogen";
+import Banner1 from '../images/banner1.png';
 
 const ServicioCliente = () => {
   return (
     <div>
-      <h1>PAGINA DE SERVICIO AL CLIENTE!</h1>
-      < Navbar />
-            < BodyHP />
-            <Footer />
+    
+
+           <Banner img={Banner1} textoVisible={"none"} />
+          <TitleGeneric text="Servicio al cliente" />
+  
     </div>
   );
 };

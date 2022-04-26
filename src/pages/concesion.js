@@ -1,11 +1,11 @@
 import React from "react";
 import TitleGeneric from "../componets/titulogen";
 
-const Cortes =()=>{
+const Concesion =()=>{
     return(
         <div>
-       <TitleGeneric text="cortes programados" />
+       <TitleGeneric text="concesion" />
         </div>
     )
 }
-export default Cortes;
+export default Concesion;

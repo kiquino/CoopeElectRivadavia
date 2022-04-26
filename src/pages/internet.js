@@ -1,11 +1,12 @@
 import React from "react";
-import Footer from "../componets/Footer";
-import Navbar from "../componets/Navbar";
+import TitleGeneric from "../componets/titulogen";
+import Banner from "../componets/banner";
+import imgBanner from "../images/banner2.png";
 const Internet =()=>{
     return(
         <div>
-            <Navbar />
-            <Footer />
+             <Banner textoVisible="none" img={imgBanner} />
+            <TitleGeneric text="internet" />
         </div>
     )
 }

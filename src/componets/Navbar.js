@@ -9,9 +9,10 @@ import redeswp from "../images/redes-wapp.png";
 
 const Navbar = () => {
   return (
-    <div>
-      {/* START NAVBAR */}
+
+   
       <div className="nav-bg">
+           {/* START NAVBAR */}
         <Nav activeKey="/home">
           <Nav.Item>
             <Nav.Link className="Logo-link" href="/">
@@ -30,13 +31,13 @@ const Navbar = () => {
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item href="../LaCooperativa">HISTORIA</Dropdown.Item>
-                <Dropdown.Item href="../LaCooperativa">
+                <Dropdown.Item href="../Nosotros">
                   NOSOTROS
                 </Dropdown.Item>
-                <Dropdown.Item href="../LaCooperativa">
+                <Dropdown.Item href="../Concesion">
                   AREA DE CONCESION
                 </Dropdown.Item>
-                <Dropdown.Item href="../LaCooperativa">
+                <Dropdown.Item href="../ResponsabilidadSocial">
                   RESPONSABILIDAD SOCIAL
                 </Dropdown.Item>
               </Dropdown.Menu>
@@ -49,6 +50,10 @@ const Navbar = () => {
           <Nav.Item>
           <div className="vr"></div>
             <Nav.Link href="/serviciocliente">SERVICIOS AL CLIENTE</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+          <div className="vr"></div>
+            <Nav.Link href="/novedades">NOVEDADES</Nav.Link>
           </Nav.Item>
           <Nav.Item>
           <div className="vr"></div>
@@ -96,9 +101,10 @@ const Navbar = () => {
             </Nav.Link>
           </Nav.Item> </div>
         </Nav>
+              {/* END NAVBAR REDES */}
       </div>
-      {/* END NAVBAR REDES */}
-    </div>
+
+
   );
 };
 

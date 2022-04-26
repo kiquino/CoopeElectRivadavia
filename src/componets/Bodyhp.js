@@ -12,7 +12,7 @@ import Redes from "./elements/redes";
 
 const BodyHP = () => {
   return (
-    <div>
+    <div className="maincontent-home">
       {/* //START CAROUSEL SLIDER HOME */}
 
    < CarouselMod />

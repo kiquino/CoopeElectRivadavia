@@ -1,7 +1,6 @@
 import React from 'react';
 
-import Navbar from "../componets/Navbar";
-import Footer from "../componets/Footer";
+
 
 import Historia from '../componets/Historia';
 import Redes from '../componets/elements/redes';
@@ -12,12 +11,12 @@ const LaCooperativa = () => {
   return (
     <div>
      
-        < Navbar />
+   
             <Banner img={Banner1} textoVisible={"none"} />
 <Historia />
 
 <Redes />
-            <Footer />
+          
     </div>
   )
 }
